@@ -70,6 +70,7 @@ foreach ($result as $row) {
         $content = '<a href="'.$row['link']. '" class="js_pbs_counter pbs_counter" rel="'.$row['id'].'" '.(!empty($row['target_blank']) ? 'target="_blank"' : '').'>'.$content.'</a>';
 	}
 
+    //Вывод всплывающей рекламы
     echo '<div class="pbs_lean_overlay">'.$content.'</div>';
 }
 echo '</div>';

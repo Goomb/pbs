@@ -4,8 +4,6 @@
  */
 
 $('input[name=type]').change(function() {
-    $('.type1').hide();
-    $('.type2').hide();
-    $('.type3').hide();
+    $('.type1, .type2, .type3').hide();
     $('.type' + $(this).val()).show();
 });

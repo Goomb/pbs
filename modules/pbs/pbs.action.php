@@ -25,8 +25,8 @@ class Pbs_action extends Action
      */
     public function init()
     {
-        if (!empty($_POST['banner_id'])) {
-            $row = DB::query_fetch_array("SELECT * FROM {bs} WHERE id=%d LIMIT 1", $_POST['banner_id']);
+        if (!empty($_POST['pbs_id'])) {
+            $row = DB::query_fetch_array("SELECT * FROM {pbs} WHERE id=%d LIMIT 1", $_POST['pbs_id']);
             if (!$row) {
                 return;
             }
